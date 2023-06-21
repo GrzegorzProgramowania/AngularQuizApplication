@@ -7,10 +7,11 @@ import { QuestionComponent } from './question/question.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, AppRoutingModule, RouterModule],
-  declarations: [AppComponent, WelcomeComponent, QuestionComponent],
+  declarations: [AppComponent, WelcomeComponent, QuestionComponent, HeaderComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
