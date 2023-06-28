@@ -1,0 +1,345 @@
+{
+    "questions": [{
+            "questionText": "Co oznacza pojęcie rok świetlny?",
+            "options": [{
+                    "text": "Odległość, jaką pokonuje światło w ciągu jednego roku.",
+                    "correct": true
+                },
+                {
+                  "text": "Czas, w którym światło dociera z jednej gwiazdy do drugiej."
+                },
+                {
+                  "text": "Okres, w którym planeta krąży wokół swojej gwiazdy."
+                },
+                {
+                  "text": "Czas, w którym Księżyc wykonuje pełen obrót wokół Ziemi."
+                }
+              ],
+              "explanation": "Rok świetlny to odległość, jaką światło pokonuje w ciągu jednego roku, przy założeniu, że porusza się ono z prędkością światła w próżni."
+            }, {
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },
+              {
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Materia, ciemna materia i ciemna energia."
+                  },
+                  {
+                    "text": "Planety, gwiazdy i galaktyki."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "Kosmici, planety i teleskopy."
+                  }
+                ],
+                "explanation": "Najważniejszymi składnikami Wszechświata są materia (widzialna materii, z której zbudowane są obiekty, takie jak gwiazdy i planety), ciemna materia (niewidzialna materia oddziałująca grawitacyjnie) oraz ciemna energia (tajemnicza forma energii, która odpowiada za przyspieszone rozszerzanie się Wszechświata)."
+              }
+    ]
+}
