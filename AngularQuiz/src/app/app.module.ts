@@ -8,10 +8,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, AppRoutingModule, RouterModule],
-  declarations: [AppComponent, WelcomeComponent, QuestionComponent, HeaderComponent],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AppRoutingModule,
+    RouterModule,
+    HttpClientModule,
+  ],
+  declarations: [
+    AppComponent,
+    WelcomeComponent,
+    QuestionComponent,
+    HeaderComponent,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
