@@ -23,4 +23,10 @@ export class QuestionComponent implements OnInit {
       this.questionList = res.questions;
     });
   }
+  nextQuestion() {
+    this.currentQuestion++;
+  }
+  previousQuestion() {
+    this.currentQuestion--;
+  }
 }

@@ -18,7 +18,9 @@
         <h5>{{ points }} Points</h5>
       </div>
       <div class="question-remain">
-        <span style="font-family: italic">Question 1 of 20</span>
+        <span style="font-family: italic"
+          >Question {{ currentQuestion + 1 }} of {{ questionList.length }}</span
+        >
       </div>
       <div class="timer">
         <h5>{{ counter }} sec ⏲</h5>
@@ -43,29 +45,30 @@
       </div>
     </div>
     <div class="options">
-      <ol>
+      <ol *ngFor="let option of questionList[currentQuestion]?.options">
         <li>
-          <div class="card">Ania</div>
-        </li>
-        <li>
-          <div class="card">Kasia</div>
-        </li>
-        <li>
-          <div class="card">Basia</div>
-        </li>
-        <li>
-          <div class="card">Grzegorz</div>
+          <div class="card">
+            {{ option.text }}
+          </div>
         </li>
       </ol>
     </div>
     <div class="d-flex justify-content-between">
-      <button class="btn">
+      <button
+        [disabled]="currentQuestion === 0"
+        class="btn"
+        (click)="previousQuestion()"
+      >
         <i class="fa text-primary fa-chevron-left fa-3x"></i>
       </button>
       <button class="btn">
         <i class="fa text-primary fa-refresh fa-3x"></i>
       </button>
-      <button class="btn">
+      <button
+        [disabled]="currentQuestion === 19"
+        class="btn"
+        (click)="nextQuestion()"
+      >
         <i class="fa text-primary fa-chevron-right fa-3x"></i>
       </button>
     </div>
