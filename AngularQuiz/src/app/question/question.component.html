@@ -47,7 +47,7 @@
     <div class="options">
       <ol *ngFor="let option of questionList[currentQuestion]?.options">
         <li (click)="answer(currentQuestion + 1, option)">
-          <div class="card">
+          <div appChangeBg [isCorrect]="option.correct" class="card">
             {{ option.text }}
           </div>
         </li>
@@ -65,7 +65,7 @@
         <i class="fa text-primary fa-refresh fa-3x"></i>
       </button>
       <button
-        [disabled]="currentQuestion === 19"
+        [disabled]="currentQuestion >= 19"
         class="btn"
         (click)="nextQuestion()"
       >

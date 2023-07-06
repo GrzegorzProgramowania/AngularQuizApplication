@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { QuestionService } from '../service/question.service';
-import { interval } from 'rxjs';
+import { interval, timeout } from 'rxjs';
 
 @Component({
   selector: 'app-question',
@@ -39,14 +39,18 @@ export class QuestionComponent implements OnInit {
     if (option.correct) {
       this.points += 10;
       this.correctAnswer++;
-      this.currentQuestion++;
-      this.resetCounter();
-      this.getProgressPercent();
+      setTimeout(() => {
+        this.currentQuestion++;
+        this.resetCounter();
+        this.getProgressPercent();
+      }, 1000);
     } else {
-      this.currentQuestion++;
-      this.inCorrectAnswer++;
-      this.resetCounter();
-      this.getProgressPercent();
+      setTimeout(() => {
+        this.currentQuestion++;
+        this.inCorrectAnswer++;
+        this.resetCounter();
+        this.getProgressPercent();
+      }, 1000);
 
       this.points -= 10;
     }

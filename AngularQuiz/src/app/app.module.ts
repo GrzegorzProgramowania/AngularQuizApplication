@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ChangeBgDirective } from './change-bg.directive';
 
 @NgModule({
   imports: [
@@ -23,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
     WelcomeComponent,
     QuestionComponent,
     HeaderComponent,
+    ChangeBgDirective,
   ],
   providers: [],
   bootstrap: [AppComponent],
