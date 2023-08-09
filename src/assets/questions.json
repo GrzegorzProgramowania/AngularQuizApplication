@@ -1,0 +1,366 @@
+{
+    "questions": [{
+            "questionText": "What does the term 'light-year' mean?",
+            "options": [{
+              "text": "A light-year is a unit of time used to measure the age of stars."
+                    
+                },
+                {
+                  "text": "A light-year is a unit of length used to express astronomical distances.",
+                    "correct": true
+                },
+                {
+                  "text": "A light-year is the distance that light travels in one day."
+                },
+                {
+                  "text": "A light-year is equivalent to 9.46 trillion meters."
+                }
+              ],
+              "explanation": "Rok świetlny to odległość, jaką światło pokonuje w ciągu jednego roku, przy założeniu, że porusza się ono z prędkością światła w próżni."
+            }, {
+                "questionText": "Which is the second smallest planet within our solar system?",
+                "options": [
+                  {
+                    "text": "Mars.",
+                    "correct": true
+                  },
+                  {
+                    "text": "Jupiter."
+                  },
+                  {
+                    "text": "Venus."
+                  },
+                  {
+                    "text": "Earth."
+                  }
+                ],
+                "explanation": ""
+              },
+              {
+                "questionText": "How many constellations is the whole sky divided into, according to modern astronomers?",
+                "options": [
+                  {
+                    "text": "99."
+                  },
+                  {
+                    "text": "101."
+                  },
+                  {
+                    "text": "77."
+                  },
+                  {
+                    "text": "88.",
+                    "correct": true
+                  }
+                ],
+                "explanation": "88"
+              },{
+                "questionText": "Which pair of planets contains CO2 gas??",
+                "options": [
+                  {
+                    "text": "Venus and Mars.",
+                    "correct": true
+                  },
+                  {
+                    "text": "Mars."
+                  },
+                  {
+                    "text": "Venus and Jupiter."
+                  },
+                  {
+                    "text": "Jupiter."
+                  }
+                ],
+                "explanation": "Venus and Mars."
+              },{
+                "questionText": "The moon called Titan orbits which planet?",
+                "options": [
+                  {
+                    "text": "Saturn.",
+                    "correct": true
+                  },
+                  {
+                    "text": "Earth."
+                  },
+                  {
+                    "text": "Venus."
+                  },
+                  {
+                    "text": "Mars"
+                  }
+                ],
+                "explanation": "Saturn."
+              },{
+                "questionText": "What are the most important components of the Universe?",
+                "options": [
+                  {
+                    "text": "Planets, stars, and galaxies"
+                  },
+                  {
+                    "text": "Matter, dark matter, and dark energy.",
+                    "correct": true
+                  },
+                  {
+                    "text": "Protons, neutrons, and electrons."
+                  },
+                  {
+                    "text": "Extraterrestrial life, planets, and suns"
+                  }
+                ],
+                "explanation": "Matter, dark matter, and dark energy."
+              },{
+                "questionText": "There have been more missions to this planet versus any other planet.",
+                "options": [
+                  {
+                    "text": "Venus."
+                  },
+                  {
+                    "text": "Mars.",
+                    "correct": true
+                  },
+                  {
+                    "text": "Sun."
+                  },
+                  {
+                    "text": "Moon."
+                  }
+                ],
+                "explanation": "Mars."
+              },{
+                "questionText": "Which planet in our solar system has the most moons?",
+                "options": [
+                  {
+                    "text": "Mars."
+                  },
+                  {
+                    "text": "Jupiter."
+                  },
+                  {
+                    "text": "Saturn.",
+                    "correct": true
+                  },
+                  {
+                    "text": "Earth."
+                  }
+                ],
+                "explanation": "Saturn."
+              },{
+                "questionText": "Which planet is closest to the Sun?",
+                "options": [
+                  {
+                    "text": "Jupiter."
+                  },
+                  {
+                    "text": "Venus.."
+                  },
+                  {
+                    "text": "Pluton."
+                  },
+                  {
+                    "text": "Mercury.",
+                    "correct": true
+                  }
+                ],
+                "explanation": "Mercury."
+              },{
+                "questionText": "Which two planets in our solar system do not have moons",
+                "options": [
+                  {
+                    "text": "Jupiter and Mars."
+                  },
+                  {
+                    "text": "Wenus and Mars"
+                  },
+                  {
+                    "text": "Mars and Mercury"
+                  },
+                  {
+                    "text": "Mercury and Venus.",
+                    "correct": true
+                  }
+                ],
+                "explanation": "Mercury and Venus."
+              },{
+                "questionText": "Who was the first human to walk on the Moon?",
+                "options": [
+                  {
+                    "text": "Eugene Cernan."
+                  },
+                  {
+                    "text": "Buzz Aldrin."
+                  },
+                  {
+                    "text": "Neil Armstrong.",
+                    "correct": true
+                  },
+                  {
+                    "text": "Jurij Gagarin."
+                  }
+                ],
+                "explanation": "Neil Armstrong."
+              },{
+                "questionText": "Which is the second smallest planet within our solar system?",
+                "options": [
+                  {
+                    "text": "Mars.",
+                    "correct": true
+                  },
+                  {
+                    "text": "Neptune."
+                  },
+                  {
+                    "text": "Venus."
+                  },
+                  {
+                    "text": "Saturn."
+                  }
+                ],
+                "explanation": "Which planet has the fastest rotation?"
+              },{
+                "questionText": "Jakie są najważniejsze składniki Wszechświata?",
+                "options": [
+                  {
+                    "text": "Mars."
+                  },
+                  {
+                    "text": "Saturn."
+                  },
+                  {
+                    "text": "Venus."
+                  },
+                  {
+                    "text": "Jupiter.",
+                    "correct": true
+                  }
+                ],
+                "explanation": "Jupiter."
+              },{
+                "questionText": "What is Orion?",
+                "options": [
+                  {
+                    "text": "Orion is a star."
+                  },
+                  {
+                    "text": "Orion is a planet."
+                  },
+                  {
+                    "text": "Orion is a constellation.",
+                    "correct": true
+                  },
+                  {
+                    "text": "Orion is a black hole."
+                  }
+                ],
+                "explanation": "Orion is a constellation."
+              },{
+                "questionText": "What is a group of bright and faint stars called?",
+                "options": [
+                  {
+                    "text": "Solar System."
+                  },
+                  {
+                    "text": "Constellation."
+                  },
+                  {
+                    "text": "Galactics."
+                  },
+                  {
+                    "text": "Dark hole.",
+                    "correct": true
+                  }
+                ],
+                "explanation": "Constellation."
+              },{
+                "questionText": "Which space agency launched the Hubble Space Telescope?",
+                "options": [
+                  {
+                    "text": "SETI."
+                  },
+                  {
+                    "text": "CIA."
+                  },
+                  {
+                    "text": "Protony, neutrony i elektrony."
+                  },
+                  {
+                    "text": "NASA.",
+                    "correct": true
+                  }
+                ],
+                "explanation": "NASA."
+              },{
+                "questionText": "Where can the biosphere be found?",
+                "options": [
+                  {
+                    "text": "On Jupiter."
+                  },
+                  {
+                    "text": "On Earth.",
+                    "correct": true
+                  },
+                  {
+                    "text": "On Mars."
+                  },
+                  {
+                    "text": "On Saturn."
+                  }
+                ],
+                "explanation": "On Earth."
+              },{
+                "questionText": "Which female astronaut spent the maximum time in space?",
+                "options": [
+                  {
+                    "text": "Sunita Williams."
+                  },
+                  {
+                    "text": "Kalpana Chawla."
+                  },
+                  {
+                    "text": "None of these."
+                  },
+                  {
+                    "text": "Lisa Norwak.",
+                    "correct": true
+                  }
+                ],
+                "explanation": "Lisa Norwak."
+              },{
+                "questionText": "Which of the following planets rotates in a direction opposite to the direction of earth's rotation?",
+                "options": [
+                  {
+                    "text": "Mars.",
+                    "correct": true
+                  },
+                  {
+                    "text": "Venus."
+                  },
+                  {
+                    "text": "Mercury."
+                  },
+                  {
+                    "text": "Jupiter."
+                  }
+                ],
+                "explanation": "Mars."
+              },{
+                "questionText": "What is the average distance (approximate) between the Sun and the Earth?",
+                "options": [
+                  {
+                    "text": "110 x 106 km."
+                  },
+                  {
+                    "text": "100 x 105 km."
+                  },
+                  {
+                    "text": "150 x 106 km.",
+                    "correct": true
+                    
+                  },
+                  {
+                    "text": " 70 x 105 km."
+                  }
+                ],
+                "explanation": "150 x 106 km."
+              }
+    ]
+}

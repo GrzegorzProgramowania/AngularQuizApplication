@@ -12,11 +12,27 @@
     <li>Refreshing the page will reset Quiz</li>
   </ol>
   <h1 style="font-family: cursive; text-align: center">All the best!</h1>
-  <div class="name col-md-4 my-3">
+  <!-- <div class="name col-md-4 my-3">
     <label for="">Enter your name:</label>
-    <input type="text" class="form-control" />
+    <input #name type="text" class="form-control" (keyup.enter)="onEnter()" />
+    
+  </div> -->
+  <div class="name col-md-4 my-3">
+    <label for="name">Enter your name:</label>
+    <input
+      #name
+      type="text"
+      class="form-control"
+      (keyup)="onKeyUp($event)"
+      (keyup.enter)="onEnter()"
+    />
   </div>
-  <button class="btn btn-primary btn-lg" routerLink="/question">
+  <button
+    class="btn btn-primary btn-lg"
+    [disabled]="isNameEmpty"
+    routerLink="/question"
+    (click)="startQuiz()"
+  >
     Start the Quiz :)
   </button>
 </div>
