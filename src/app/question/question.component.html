@@ -9,8 +9,8 @@
         />
       </div>
       <div class="quiz-header">
-        <h4 style="font-family: cursive">Angular & TypeScipt Quiz!</h4>
-        <span style="font-style: ita">Welcome {{ name }}</span>
+        <h4 style="font-family: cursive">Angular & TypeScript Quiz!</h4>
+        <span style="font-style: italic">Welcome {{ name }}</span>
       </div>
     </div>
 
@@ -48,32 +48,46 @@
         </div>
       </div>
       <div class="options">
-        <ol *ngFor="let option of questionList[currentQuestion]?.options">
-          <li (click)="answer(currentQuestion + 1, option)">
-            <div appChangeBg [isCorrect]="option.correct" class="card">
+        <ol>
+          <li
+            *ngFor="
+              let option of questionList[currentQuestion]?.options;
+              let i = index
+            "
+          >
+            <button
+              [disabled]="isAnswered"
+              (click)="answer(currentQuestion + 1, option)"
+              appChangeBg
+              [isCorrect]="option.correct"
+              class="btn btn-primary"
+              style="
+                width: 100%;
+                background-color: white;
+                text-align: left;
+                color: black;
+              "
+            >
               {{ option.text }}
-            </div>
+            </button>
           </li>
         </ol>
       </div>
-      <div class="d-flex justify-content-between">
-        <button
-          [disabled]="currentQuestion === 0"
-          class="btn"
-          (click)="previousQuestion()"
-        >
-          <i class="fa text-primary fa-chevron-left fa-3x"></i>
-        </button>
+      <div class="btnRefresh">
+        <!-- <button [disabled]="currentQuestion === 0" class="btn"> -->
+        <!-- (click)="previousQuestion()" -->
+        <!-- <i class="fa text-primary fa-chevron-left fa-3x"></i>
+        </button> -->
         <button class="btn" (click)="resetQuiz()">
           <i class="fa text-primary fa-refresh fa-3x"></i>
         </button>
-        <button
-          [disabled]="currentQuestion >= 19"
+        <!-- <button
+          [disabled]="currentQuestion >= questionList.length - 1 || !isAnswered"
           class="btn"
-          (click)="nextQuestion()"
-        >
-          <i class="fa text-primary fa-chevron-right fa-3x"></i>
-        </button>
+        > -->
+        <!-- (click)="nextQuestion()" -->
+        <!-- <i class="fa text-primary fa-chevron-right fa-3x"></i>
+        </button> -->
       </div>
     </ng-container>
 
@@ -91,10 +105,17 @@
             You have completed the quiz. <br />
             Below is your result:
           </h3>
-          <p>Total Question Attemted : {{ questionList.length }}</p>
-          <p>Total Correct Answered : {{ correctAnswer }}</p>
-          <p>Total Wrong Answered : {{ inCorrectAnswer }}</p>
-          <p>Your Score : {{ points }} Points</p>
+          <p>
+            Total Question Attemted:
+            {{ correctAnswer + inCorrectAnswer }}
+          </p>
+          <p>
+            Total Unanswered Questions:
+            {{ 20 - (correctAnswer + inCorrectAnswer) }}
+          </p>
+          <p>Total Correct Answered: {{ correctAnswer }}</p>
+          <p>Total Wrong Answered: {{ inCorrectAnswer }}</p>
+          <p>Your Score: {{ points }} Points</p>
         </div>
       </div>
     </ng-container>

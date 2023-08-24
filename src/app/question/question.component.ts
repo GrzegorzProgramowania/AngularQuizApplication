@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { QuestionService } from '../service/question.service';
-import { interval, timeout } from 'rxjs';
+import { interval, Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'app-question',
   templateUrl: './question.component.html',
   styleUrls: ['./question.component.css'],
 })
-export class QuestionComponent implements OnInit {
+export class QuestionComponent implements OnInit, OnDestroy {
   public name: string = '';
-  public questionList: any = [];
+  public questionList: any = 20;
   public currentQuestion: number = 0;
   public points: number = 0;
   counter = 60;
@@ -18,48 +19,93 @@ export class QuestionComponent implements OnInit {
   interval$: any;
   progress: string = '0';
   isQuizCompleted: boolean = false;
+  private destroy$ = new Subject<void>();
+  isAnswered: boolean = false;
+  public totalQuestionAttempted: number = 0;
+  public selectedQuestionList: any = [];
+  answeredQuestions: any[] = [];
   constructor(private questionService: QuestionService) {}
 
   ngOnInit(): void {
     this.name = localStorage.getItem('name')!;
     this.getAllQuestions();
     this.startCounter();
+    this.selectedQuestionList = Array(this.questionList.length).fill(false);
   }
+
+  ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
+  }
+
   getAllQuestions() {
     this.questionService.getQuestionJson().subscribe((res) => {
       this.questionList = res.questions;
     });
   }
-  nextQuestion() {
-    this.currentQuestion++;
-  }
-  previousQuestion() {
-    this.currentQuestion--;
-  }
+
   answer(currentQno: number, option: any) {
     if (currentQno === this.questionList.length) {
       this.isQuizCompleted = true;
       this.stopCounter();
+      this.totalQuestionAttempted++;
+      this.selectedQuestionList[currentQno - 1] = true;
     }
-    if (option.correct) {
-      this.points += 10;
-      this.correctAnswer++;
-      setTimeout(() => {
-        this.currentQuestion++;
-        this.resetCounter();
-        this.getProgressPercent();
-      }, 1000);
-    } else {
-      setTimeout(() => {
-        this.currentQuestion++;
-        this.inCorrectAnswer++;
-        this.resetCounter();
-        this.getProgressPercent();
-      }, 1000);
 
-      this.points -= 10;
+    if (!option.selected) {
+      this.questionList[currentQno - 1].options.forEach((otherOption: any) => {
+        otherOption.selected = false;
+      });
+
+      option.selected = true;
+      this.isAnswered = true;
+
+      if (option.correct) {
+        this.points += 10;
+        this.correctAnswer++;
+        setTimeout(() => {
+          this.currentQuestion++;
+          this.resetCounter();
+          this.getProgressPercent();
+        }, 1000);
+      } else {
+        setTimeout(() => {
+          this.currentQuestion++;
+          this.inCorrectAnswer++;
+          this.resetCounter();
+          this.getProgressPercent();
+        }, 1000);
+
+        this.points -= 10;
+      }
     }
   }
+
+  // getAttemptedQuestions() {
+  //   // Return an array of indexes of questions that were answered
+  //   return this.selectedQuestionList.reduce(
+  //     (acc: number[], isSelected: boolean, index: number) => {
+  //       if (isSelected) {
+  //         acc.push(index);
+  //       }
+  //       return acc;
+  //     },
+  //     []
+  //   );
+  // }
+
+  // getSelectedQuestions() {
+  //   // Get indexes of attempted questions
+  //   const attemptedQuestions = this.getAttemptedQuestions();
+
+  //   // Get the list of questions that were actually answered
+  //   const answeredQuestions = this.questionList.filter(
+  //     (_: any, index: number) => attemptedQuestions.includes(index)
+  //   );
+
+  //   return answeredQuestions;
+  // }
+
   startCounter() {
     this.interval$ = interval(1000).subscribe((val) => {
       this.counter--;
@@ -73,15 +119,19 @@ export class QuestionComponent implements OnInit {
       this.interval$.unsubscribe();
     }, 1200000);
   }
+
   stopCounter() {
     this.interval$.unsubscribe();
     this.counter = 0;
+    this.isAnswered = false;
   }
+
   resetCounter() {
     this.stopCounter();
     this.counter = 60;
     this.startCounter();
   }
+
   resetQuiz() {
     this.resetCounter();
     this.getAllQuestions();
@@ -90,11 +140,36 @@ export class QuestionComponent implements OnInit {
     this.currentQuestion = 0;
     this.progress = '0';
   }
+
   getProgressPercent() {
     this.progress = (
       (this.currentQuestion / this.questionList.length) *
       100
     ).toString();
     return this.progress;
+  }
+
+  previousQuestion() {
+    if (this.currentQuestion > 0) {
+      this.currentQuestion--;
+    }
+  }
+
+  nextQuestion() {
+    if (
+      this.currentQuestion < this.questionList.length - 1 &&
+      this.isAnswered
+    ) {
+      this.currentQuestion++;
+      this.resetCounter();
+      this.resetOptions();
+      this.isAnswered = false;
+    }
+  }
+
+  resetOptions() {
+    this.questionList[this.currentQuestion].options.forEach((option: any) => {
+      option.selected = false;
+    });
   }
 }

@@ -14,3 +14,13 @@ li .card:hover{
 ol{
     padding: 0;
 }
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btnRefresh{
+    display: flex;
+    justify-content: center;
+}
