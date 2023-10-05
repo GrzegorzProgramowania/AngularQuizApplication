@@ -24,6 +24,7 @@ export class QuestionComponent implements OnInit, OnDestroy {
   public totalQuestionAttempted: number = 0;
   public selectedQuestionList: any = [];
   answeredQuestions: any[] = [];
+  summaryAfterQuestion: number = 20;
   constructor(private questionService: QuestionService) {}
 
   ngOnInit(): void {
@@ -81,38 +82,17 @@ export class QuestionComponent implements OnInit, OnDestroy {
     }
   }
 
-  // getAttemptedQuestions() {
-  //   // Return an array of indexes of questions that were answered
-  //   return this.selectedQuestionList.reduce(
-  //     (acc: number[], isSelected: boolean, index: number) => {
-  //       if (isSelected) {
-  //         acc.push(index);
-  //       }
-  //       return acc;
-  //     },
-  //     []
-  //   );
-  // }
-
-  // getSelectedQuestions() {
-  //   // Get indexes of attempted questions
-  //   const attemptedQuestions = this.getAttemptedQuestions();
-
-  //   // Get the list of questions that were actually answered
-  //   const answeredQuestions = this.questionList.filter(
-  //     (_: any, index: number) => attemptedQuestions.includes(index)
-  //   );
-
-  //   return answeredQuestions;
-  // }
-
   startCounter() {
     this.interval$ = interval(1000).subscribe((val) => {
       this.counter--;
       if (this.counter === 0) {
-        this.currentQuestion++;
-        this.counter = 60;
-        this.points -= 10;
+        if (this.currentQuestion < this.questionList.length - 1) {
+          this.currentQuestion++;
+          this.counter = 60;
+          this.points -= 10;
+        } else {
+          this.isQuizCompleted = true;
+        }
       }
     });
     setTimeout(() => {
@@ -166,6 +146,24 @@ export class QuestionComponent implements OnInit, OnDestroy {
       this.isAnswered = false;
     }
   }
+  // nextQuestion() {
+  //   if (this.currentQuestion === this.summaryAfterQuestion) {
+  //     this.showSummary();
+  //   } else if (
+  //     this.currentQuestion < this.questionList.length - 1 &&
+  //     this.isAnswered
+  //   ) {
+  //     this.currentQuestion++;
+  //     this.resetCounter();
+  //     this.resetOptions();
+  //     this.isAnswered = false;
+  //   }
+  // }
+
+  // showSummary() {
+  //   this.isQuizCompleted = true;
+  //   this.stopCounter();
+  // }
 
   resetOptions() {
     this.questionList[this.currentQuestion].options.forEach((option: any) => {
