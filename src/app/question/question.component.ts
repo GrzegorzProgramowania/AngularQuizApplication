@@ -77,7 +77,7 @@ export class QuestionComponent implements OnInit, OnDestroy {
           this.getProgressPercent();
         }, 1000);
 
-        this.points -= 10;
+        this.points = this.points;
       }
     }
   }
@@ -89,7 +89,7 @@ export class QuestionComponent implements OnInit, OnDestroy {
         if (this.currentQuestion < this.questionList.length - 1) {
           this.currentQuestion++;
           this.counter = 60;
-          this.points -= 10;
+          this.points -= 0;
         } else {
           this.isQuizCompleted = true;
         }
@@ -146,24 +146,6 @@ export class QuestionComponent implements OnInit, OnDestroy {
       this.isAnswered = false;
     }
   }
-  // nextQuestion() {
-  //   if (this.currentQuestion === this.summaryAfterQuestion) {
-  //     this.showSummary();
-  //   } else if (
-  //     this.currentQuestion < this.questionList.length - 1 &&
-  //     this.isAnswered
-  //   ) {
-  //     this.currentQuestion++;
-  //     this.resetCounter();
-  //     this.resetOptions();
-  //     this.isAnswered = false;
-  //   }
-  // }
-
-  // showSummary() {
-  //   this.isQuizCompleted = true;
-  //   this.stopCounter();
-  // }
 
   resetOptions() {
     this.questionList[this.currentQuestion].options.forEach((option: any) => {
